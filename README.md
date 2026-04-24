@@ -1,27 +1,26 @@
-# Job Application Tracker (WIP)
+# FoxiTrack
 
-⚙️ **Work in Progress** — This is a learning project where I'm building a full-stack job application tracker using ASP.NET Core (backend) and React (frontend).  
-I’m experimenting and learning React, so expect some rough edges and updates!
+FoxiTrack is a work-in-progress full-stack job application tracker built with ASP.NET Core Web API and React.
 
----
+It is designed to organise job applications, companies, interview stages, statuses, and notes in one clean workflow. The project is currently being developed as a practical full-stack learning project with a focus on readable code, maintainability, and API-driven architecture.
 
-## What it does so far
+## Current features
 
-- Simple backend API to store and fetch jobs
-- React frontend that fetches and displays job listings
-- Basic filtering and status display (more features coming!)
-
----
+- ASP.NET Core Web API backend
+- Entity Framework Core with SQLite
+- React frontend using functional components and hooks
+- Job listing display
+- Basic filtering and status display
+- Swagger/OpenAPI documentation for backend endpoints
 
 ## Tech stack
 
-- Backend: ASP.NET Core Web API + EF Core (SQLite)
-- Frontend: React (functional components, hooks)
-- Swagger for API docs
+- Backend: C#, ASP.NET Core Web API, Entity Framework Core
+- Database: SQLite
+- Frontend: React, JavaScript, HTML, CSS
+- Tooling: Swagger/OpenAPI, Git, Visual Studio, VS Code
 
----
-
-## How to run it
+## How to run locally
 
 ### Backend
 
@@ -30,31 +29,28 @@ cd JobTracker.API
 dotnet restore
 dotnet run
 ```
-The backend API will start running at https://localhost:7054 (or another port, check your output).
+
+Swagger UI is available in development mode after starting the backend.
 
 ### Frontend
 
-Make sure you have Node.js and npm installed. Then run:
 ```bash
 cd jobtracker-frontend
 npm install
 npm start
 ```
-This will start the React development server at http://localhost:3000.
 
-The React app fetches job data from the backend API, so make sure the backend is running first.
+The React app fetches job data from the backend API, so the backend should be running first.
 
-### Future improvements
-Add authentication
+## Planned improvements
 
-Improve UI with better design and more filters
+- Add full CRUD operations for job applications
+- Add authentication and user-specific job tracking
+- Improve filtering and search
+- Improve frontend layout and styling
+- Add validation and stronger error handling
+- Prepare the application for deployment
 
-Add more CRUD operations for jobs
+## Project purpose
 
-Deploy to cloud services
-
-### Notes
-This is a learning project, so things may change as I improve the code.
-
-Feel free to open issues or contribute!
-Thanks for checking this out! 😊
+This project demonstrates my progress in building full-stack applications with ASP.NET Core and React. It focuses on practical architecture, API integration, maintainable code, and iterative improvement.

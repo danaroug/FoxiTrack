@@ -44,7 +44,7 @@ The React app fetches job data from the backend API, so the backend should be ru
 
 ## Planned improvements
 
-- Add full CRUD operations for job applications
+- Improve the existing CRUD workflow with validation, user-specific job tracking, and a cleaner frontend editing experience.
 - Add authentication and user-specific job tracking
 - Improve filtering and search
 - Improve frontend layout and styling
